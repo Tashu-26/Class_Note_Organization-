@@ -247,7 +247,7 @@
                             <div class="subject-bar-name" th:text="${subject.name}">Subject</div>
                             <div class="subject-bar-track">
                                 <div class="subject-bar-fill"
-                                     th:style="'width:' + (${stats.total_notes} > 0 ? '60' : '0') + '%;background:' + (${iter.index} % 5 == 0 ? '#6366f1' : ${iter.index} % 5 == 1 ? '#3b82f6' : ${iter.index} % 5 == 2 ? '#10b981' : ${iter.index} % 5 == 3 ? '#ec4899' : '#f59e0b')">
+                                     th:style="|width: ${stats.total_notes > 0 ? 60 : 0}%; background: ${iter.index % 5 == 0 ? '#6366f1' : iter.index % 5 == 1 ? '#3b82f6' : iter.index % 5 == 2 ? '#10b981' : iter.index % 5 == 3 ? '#ec4899' : '#f59e0b'};|"
                                 </div>
                             </div>
                             <div class="subject-bar-count">-</div>
